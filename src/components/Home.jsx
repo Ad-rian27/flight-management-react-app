@@ -1,7 +1,10 @@
 import React from 'react'
+import NavigationBar from './NavigationBar'
 
 function Home() {
   return (
+    <div>
+    <NavigationBar />
     <div 
       className="text-light d-flex align-items-center justify-content-center" 
       style={{
@@ -16,20 +19,8 @@ function Home() {
         animation: 'fadeIn 1.5s ease-in-out'
       }}
     >
-      {/* CSS Entry Animations */}
-      <style>{`
-        @keyframes fadeIn {
-          from { opacity: 0; transform: scale(1.02); }
-          to { opacity: 1; transform: scale(1); }
-        }
-        .animate-up {
-          animation: slideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        @keyframes slideUp {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
+
+
 
       {/* Glassmorphism Text Panel */}
       <div 
@@ -104,6 +95,7 @@ function Home() {
         </p>
 
       </div>
+    </div>
     </div>
   )
 }
