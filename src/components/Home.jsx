@@ -1,8 +1,11 @@
 import React from 'react'
+import NavigationBar from './NavigationBar'
 
 function Home() {
   return (
+    
     <div 
+      
       className="text-light d-flex align-items-center justify-content-center" 
       style={{
         position: 'fixed',
@@ -16,6 +19,7 @@ function Home() {
         animation: 'fadeIn 1.5s ease-in-out'
       }}
     >
+      <NavigationBar />
       {/* CSS Entry Animations */}
       <style>{`
         @keyframes fadeIn {
