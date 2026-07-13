@@ -23,7 +23,7 @@ const ViewFlights = () => {
     return (
         <div>
             <NavigationBar />
-            <div className="container">
+            <div className="container mt-5 pt-5">
                 <div className="row">
                     <div className="col col-12">
                         <div className="row g-3">
