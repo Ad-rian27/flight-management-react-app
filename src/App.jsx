@@ -7,7 +7,9 @@ import ViewFlights from './components/ViewFlights'
 import AddFlight from './components/AddFlight'
 import Home from './components/Home'
 import NavigationBar from './components/NavigationBar'
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+>>>>>>> development
 
 function App() {
   const [count, setCount] = useState(0)
