@@ -1,5 +1,10 @@
 import { useState } from 'react'
 import './App.css'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Home from './components/Home'
+import AddFlight from './components/AddFlight'
 import ViewFlights from './components/ViewFlights'
 
 function App() {
@@ -7,7 +12,13 @@ function App() {
 
   return (
     <>
-      <ViewFlights/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/add" element={<AddFlight />} />
+          <Route path="/view" element={<ViewFlights />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
