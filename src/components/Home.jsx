@@ -1,12 +1,10 @@
-import React from 'react'
-import NavigationBar from './NavigationBar'
+import React from 'react';
+import NavigationBar from './NavigationBar';
 
 function Home() {
   return (
     <>
-      {/* Navigation bar placed safely on its own global layer */}
       <NavigationBar />
-
       <div 
         className="text-light d-flex flex-column align-items-center justify-content-center" 
         style={{
@@ -16,13 +14,12 @@ function Home() {
           width: '100vw',
           height: '100vh',
           background: 'linear-gradient(135deg, rgba(8, 28, 44, 0.8) 0%, rgba(2, 10, 18, 0.95) 100%), url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1920") no-repeat center center/cover',
-          zIndex: 1000,
+          zIndex: 999,
           overflow: 'hidden',
-          paddingTop: '80px', // Prevents navbar from clipping over the text box
+          paddingTop: '80px',
           animation: 'fadeIn 1.5s ease-in-out'
         }}
       >
-        {/* CSS Entry Animations */}
         <style>{`
           @keyframes fadeIn {
             from { opacity: 0; transform: scale(1.02); }
@@ -37,7 +34,6 @@ function Home() {
           }
         `}</style>
 
-        {/* Glassmorphism Text Panel */}
         <div 
           className="text-center p-5 mx-3 animate-up" 
           style={{ 
@@ -50,7 +46,6 @@ function Home() {
             boxShadow: '0 30px 60px rgba(0, 0, 0, 0.5)'
           }}
         >
-          {/* Context Header */}
           <span 
             className="text-uppercase fw-bold mb-3 d-inline-block"
             style={{ 
@@ -63,7 +58,6 @@ function Home() {
             Flight Management System
           </span>
 
-          {/* System Title */}
           <h1 
             className="display-3 fw-bold mb-4" 
             style={{ 
@@ -78,7 +72,6 @@ function Home() {
             AeroVantage Control
           </h1>
 
-          {/* Divider */}
           <div 
             className="mx-auto my-4" 
             style={{ 
@@ -88,7 +81,6 @@ function Home() {
             }}
           ></div>
 
-          {/* Purposeful, Meaningful Text */}
           <p 
             className="fs-5 fw-light mx-auto" 
             style={{ 
@@ -101,7 +93,6 @@ function Home() {
             Welcome to the central flight operations console. This portal allows operators to register incoming commercial flights, track route assignments, monitor active air fleets, and maintain data accuracy across scheduled logistics. 
           </p>
 
-          {/* Minimalist Subtext instruction */}
           <p 
             className="small text-uppercase mt-5 mb-0" 
             style={{ color: '#64748b', letterSpacing: '2px', fontSize: '0.7rem' }}
@@ -111,7 +102,7 @@ function Home() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
