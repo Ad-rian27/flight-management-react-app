@@ -4,7 +4,7 @@ import NavigationBar from './NavigationBar'
 function Home() {
   return (
     <div>
-    <NavigationBar />
+
     <div 
       className="text-light d-flex align-items-center justify-content-center" 
       style={{
@@ -21,7 +21,7 @@ function Home() {
     >
 
 
-
+    <NavigationBar />
       {/* Glassmorphism Text Panel */}
       <div 
         className="text-center p-5 mx-3 animate-up" 

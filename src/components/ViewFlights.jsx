@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import NavigationBar from './NavigationBar'
 
 const ViewFlights = () => {
 
@@ -21,7 +22,8 @@ const ViewFlights = () => {
 
     return (
         <div>
-            <div className="container">
+            <NavigationBar/>
+            <div className="container mt-5">
                 <div className="row">
                     <div className="col col-12">
                         <div className="row g-3">

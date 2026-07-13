@@ -16,10 +16,17 @@ function App() {
 
   return (
     <>
-      <ViewFlights/>
-      <AddFlight />
-      <Home />
-      <NavigationBar />
+<BrowserRouter>
+
+<Routes>
+
+<Route path='/' element={<Home />} />
+<Route path='/add' element={<AddFlight />} />
+<Route path='/view' element={<ViewFlights />} />
+
+</Routes>
+
+</BrowserRouter>
     </>
   )
 }
