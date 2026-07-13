@@ -8,20 +8,28 @@ import AddFlight from './components/AddFlight'
 import Home from './components/Home'
 import NavigationBar from './components/NavigationBar'
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
->>>>>>> development
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <ViewFlights/>
-      <AddFlight />
-      <Home />
-      <NavigationBar />
+    <BrowserRouter>
+
+    <Routes>
+
+    <Route path='/' element={<Home />} />
+    <Route path='/add' element={<AddFlight />} />
+    <Route path='/view' element={<ViewFlights />} />
+
+    </Routes>
+
+    </BrowserRouter>
+  
     </>
-  )
+    )
 }
 
 export default App

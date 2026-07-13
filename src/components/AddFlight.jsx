@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import NavigationBar from "./NavigationBar";
 
 const AddFlight = () => {
 
@@ -63,6 +64,8 @@ const AddFlight = () => {
 
     return (
         <div>
+
+            <NavigationBar />
 
             <div className="container mt-5">
 
