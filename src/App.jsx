@@ -10,24 +10,26 @@ import NavigationBar from './components/NavigationBar'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-<BrowserRouter>
+    <BrowserRouter>
 
-<Routes>
+    <Routes>
 
-<Route path='/' element={<Home />} />
-<Route path='/add' element={<AddFlight />} />
-<Route path='/view' element={<ViewFlights />} />
+    <Route path='/' element={<Home />} />
+    <Route path='/add' element={<AddFlight />} />
+    <Route path='/view' element={<ViewFlights />} />
 
-</Routes>
+    </Routes>
 
-</BrowserRouter>
+    </BrowserRouter>
+  
     </>
-  )
+    )
 }
 
 export default App
